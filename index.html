@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Calculator</title>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <h1 id="heading"> Scientific Calculator</h1>
+    <div id="calculator">
+      <div class="grid_container">
+        <input class="grid_item" id="display" type="text">
+        <input class="grid_item" type="button" value="1" onclick="display.value += '1'">
+        <input class="grid_item" type="button" value="2" onclick="display.value += '2'">
+        <input class="grid_item" type="button" value="3" onclick="display.value += '3'">
+        <input class="grid_item" type="button" value="C" onclick="display.value = ''">
+        <input class="grid_item" type="button" value="⌫" onclick="backspace()">
+        <input class="grid_item" type="button" value="4" onclick="display.value += '4'">
+        <input class="grid_item" type="button" value="5" onclick="display.value += '5'">
+        <input class="grid_item" type="button" value="6" onclick="display.value += '6'">
+        <input class="grid_item" type="button" value="+" onclick="display.value += '+'">
+        <input class="grid_item" type="button" value="-" onclick="display.value += '-'">
+        <input class="grid_item" type="button" value="7" onclick="display.value += '7'">
+        <input class="grid_item" type="button" value="8" onclick="display.value += '8'">
+        <input class="grid_item" type="button" value="9" onclick="display.value += '9'">
+        <input class="grid_item" type="button" value="x" onclick="display.value += '*'">
+        <input class="grid_item" type="button" value="/" onclick="display.value += '/'">
+        <input class="grid_item" type="button" value="." onclick="display.value += '.'">
+        <input class="grid_item" type="button" value="0" onclick="display.value += '0'">
+        <input class="grid_item" type="button" value="00" onclick="display.value += '00'">
+        <input class="grid_item" type="button" value="%" onclick="display.value += '%'">
+        <input class="grid_item" type="button" value="=" onclick="calculate()">
+        <input class="grid_item" type="button" value="^" onclick="power()">
+        <input class="grid_item" type="button" value="pi" onclick="pi()">
+        <input class="grid_item" type="button" value="sin(" onclick="display.value += 'sin('">
+        <input class="grid_item" type="button" value="cos(" onclick="display.value += 'cos('">
+        <input class="grid_item" type="button" value="tan(" onclick="display.value += 'tan('">
+        <input class="grid_item" type="button" value="E" onclick="e()">
+        <input class="grid_item" type="button" value="(" onclick="display.value += '('">
+        <input class="grid_item" type="button" value=")" onclick="display.value += ')'">
+        <input class="grid_item" type="button" value="log(" onclick="base10Log()">
+        <input class="grid_item" type="button" value="sqrt(" onclick="squareRoot()">
+        <input class="grid_item" type="button" value="ln2" onclick="display.value += Math.LN2">
+        <input class="grid_item" type="button" value="log10(" onclick="base10Log()">
+        <input class="grid_item" type="button" value="l2e" onclick="display.value += Math.LOG2E">
+        <input class="grid_item" type="button" value="le" onclick="display.value += Math.LOG10E">
+        <input class="grid_item" type="button" value="exp(" onclick="display.value += 'exp('">
+      </div>
+    </div>
+    </div>
+    <footer>&copy; Copyright 2024, All Rights Reserved, Mitesh Godne</footer>
+  </main>
+</body>
+
+</html>
